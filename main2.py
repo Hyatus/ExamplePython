@@ -60,6 +60,11 @@ def login():
     data = request.get_json()
     username = data['username']
     password = data['password']
+    password1 = data[password
+    password2 = data[password
+    password3 = data[password
+    password4 = data[password
+    password5 = data[password
     
     username += 'dominio.com.org'
     try:
