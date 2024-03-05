@@ -61,7 +61,10 @@ def login():
     username = data['username']
     password = data['password']
     
-    username += 'dominio.com.org'
+    username = username + 'dominio.com.org'
+    username1 = username1 + 'dominio.com.org'
+    username2 = username2 + 'dominio.com.org'
+    username3 = username3 + 'dominio.com.org'
     try:
         with Connection(ServerLDAP, user=username, password=password, auto_bind=True):
             print("Login exitoso")
