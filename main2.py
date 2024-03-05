@@ -6,6 +6,12 @@ import datetime
 import jaydebeapi
 import jpype
 import os 
+app.config['DRIVER_JDBC'] = os.getenv('DRIVER_JDBC')
+app.config['CONN_STRING'] = os.getenv('CONN_STRING')
+app.config['USER'] = os.getenv('USER')
+app.config['LOG4J'] = os.getenv('LOG4J')
+app.config['SERVER_LDAP'] = os.getenv('SERVER_LDAP')
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 import json
 import querys
 import pyodbc
